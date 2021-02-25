@@ -46,7 +46,7 @@ if [[ $DEBUG == '--debug' ]]; then
 fi
 
 if [[ $ACR_DIGEST == '' ]]; then
-    echo "Could not get image digest, make sure this tag exists"
+    echo "Could not get image digest, make sure this tag exists. Additionally make sure credentials have access rights to repository"
     exit 1
 fi
 
